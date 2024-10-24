@@ -1,0 +1,48 @@
+<!--
+Victor Ribeiro Calado
+RA:.2313553
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Interesse</title>
+</head>
+<body>
+    <form>
+
+        <!-- Nome Completo -->
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required><br><br><!--OK-->
+
+        <!-- Idade -->
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="18" max="120" required><br><br><!--OK-->
+
+        <!-- E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="insira um e-mail válido" required><br><br><!--OK-->
+
+        <!-- Conteudo -->
+        <label for="conteudo">Conteúdo de maior interesse:</label>
+        <select id="conteudo" name="conteudo" required><!--OK-->
+
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript" selected>JavaScript</option> <!-- Selecionado por padrão -->
+        </select><br><br><!--OK-->
+
+        <!--Opinião-->
+        <label for="opiniao">Deixe sua opinião:</label><br>
+        <textarea id="opiniao" name="opiniao" rows="5" cols="30"></textarea><br><br><!--OK-->
+
+        <!--Senha Mascarada -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br><!--OK-->
+
+        <input type="submit" value="Enviar"><!--OK-->
+    </form>
+</body>
+</html>
